@@ -96,8 +96,11 @@ python main.py
 Tech Stack
 ---
 Gemma 4 E4B — AI Assistant Agent
+
 Parakeet 0.6B v3 STT-TDT — Streaming Speech Recognition
+
 EyeTrax — Eye Gaze Tracking
+
 llama.cpp — Efficient Local Inference Engine
 
 Goal
