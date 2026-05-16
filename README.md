@@ -23,7 +23,7 @@ For acceptable performance and smooth local AI inference, the recommended minimu
 Development Setup
 ---
 Download:
-`gui_main.py`
+`main.py`
 `ai_full.py`
 `server.py`
 `voice_engine.py`
@@ -38,17 +38,26 @@ Download llama.cpp release binaries and place them inside:
 llamacpp/bin
 ```
 Download the required files/models:
+
 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+
 https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+
 https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF/resolve/main/gemma-4-E4B-it-Q4_K_M.gguf
+
 https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF/blob/main/mmproj-F16.gguf
+
 https://huggingface.co/google/gemma-4-E4B-it/blob/main/chat_template.jinja
-Rename:
+
+Rename the following files:
+
 `gemma-4-E4B-it-Q4_K_M.gguf` → `google_gemma-4-E4B-it-Q4_K_M.gguf`
+
 `mmproj-F16.gguf` → `mmproj-google_gemma-4-E4B-it-f16.gguf`
+
 Place all downloaded models/files inside:
 ```text
-models/
+model/
 ```
 Install the required Python packages:
 ```bash
@@ -62,7 +71,7 @@ ComputerUsage
 ├── llamacpp
 │   └── bin
 │
-├── models
+├── model
 │   ├── chat_template.jinja
 │   ├── google_gemma-4-E4B-it-Q4_K_M.gguf
 │   ├── kokoro-v1.0.onnx
@@ -72,7 +81,7 @@ ComputerUsage
 ├── libespeak-ng.dll
 │
 ├── ai_full.py
-├── gui_main.py
+├── main.py
 ├── server.py
 ├── tools.py
 └── voice_engine.py
@@ -81,17 +90,20 @@ ComputerUsage
 Running the Project
 Run:
 ```bash
-python gui_main.py
+python main.py
 ```
----
+
 Tech Stack
+---
 Gemma 4 E4B — AI Assistant Agent
 Parakeet 0.6B v3 STT-TDT — Streaming Speech Recognition
 EyeTrax — Eye Gaze Tracking
 llama.cpp — Efficient Local Inference Engine
----
+
 Goal
-The goal of this project is to make computers more accessible and usable for physically disabled users by combining modern AI systems with intuitive control mechanisms.
 ---
+The goal of this project is to make computers more accessible and usable for physically disabled users by combining modern AI systems with intuitive control mechanisms.
+
 Note
+---
 Please note that the current project will run significantly faster once MTP support is officially added to llama.cpp. In that case, the codebase should be updated accordingly.
