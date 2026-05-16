@@ -6,6 +6,7 @@ An AI-powered accessibility interface that enables physically disabled users to 
 The project combines Gemma 4 as an intelligent AI agent, Parakeet for speech-to-text, and EyeTrax for eye gaze tracking — creating a seamless hands-free computing experience.
 
 Features
+---
 EyeTrax is used for eye tracking, allowing users to control the mouse cursor using eye movement. Blinking is used for clicking.
 Gemma 4 E4B model acts as an AI assistant agent capable of opening apps, folders, and files, typing text, copying content to the clipboard, and analyzing the screen using vision.
 Uses Parakeet 0.6B v3 STT-TDT for real-time streaming speech-to-text.
@@ -14,11 +15,13 @@ One of the only free and open solutions that combines eye tracking, voice intera
 Powered by state-of-the-art (SOTA) AI models.
 
 Minimum System Requirements
+---
 For acceptable performance and smooth local AI inference, the recommended minimum system requirements are:
 16 GB RAM
 8 GB VRAM (NVIDIA GPU recommended)
 
 Development Setup
+---
 Download:
 `gui_main.py`
 `ai_full.py`
