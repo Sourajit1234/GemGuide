@@ -1,0 +1,16 @@
+webrtcvad-wheels
+openai
+kokoro-onnx
+onnx-asr
+sounddevice
+pyaudio
+opencv-python
+numpy
+Pillow
+customtkinter
+pyautogui
+psutil
+pyperclip
+rapidfuzz
+requests
+eyetrax
